@@ -3,7 +3,9 @@
  *  - most active editors
  *  - most actively edited articles
  */
-var bot = require('../lib/bot').bot,
+'use strict';
+
+var bot = require('../lib/bot'),
 	client = new bot('config.js');
 
 var LIMIT = 500;
@@ -74,8 +76,8 @@ client.getRecentChanges(false, function(data, next) {
 				usersItem.created++;
 				break;
 
-			case 'edit':
 			default:
+			case 'edit':
 				usersItem.edits++;
 		}
 

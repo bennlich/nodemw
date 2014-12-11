@@ -1,12 +1,12 @@
 /**
  * Example script getting contributions done by Pyrabot
  */
+'use strict';
 
-var bot = require('../lib/bot').bot;
-
-var client = new bot({
-	server: 'poznan.wikia.com'
-});
+var bot = require('../lib/bot'),
+	client = new bot({
+		server: 'poznan.wikia.com'
+	});
 
 client.getUserContribs({
 	user: 'Pyrabot'

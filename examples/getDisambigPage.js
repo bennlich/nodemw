@@ -1,14 +1,14 @@
 /**
  * Example script preparing ship disambig pages for translation
  */
+'use strict';
 
-var bot = require('../lib/bot').bot;
-
-var client = new bot({
-	server: 'en.wikipedia.org',
- 	path: '/w',
-	debug: false
-});
+var bot = require('../lib/bot'),
+	client = new bot({
+		server: 'en.wikipedia.org',
+		path: '/w',
+		debug: false
+	});
 
 var titles = [
 	'Manta',
